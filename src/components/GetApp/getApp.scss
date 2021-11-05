@@ -1,0 +1,18 @@
+#getApp {
+    overflow: hidden;
+    background-color: #6119a4;
+}
+
+// ======== responsive ========
+@media (max-width: 639px) {
+    #getApp {
+        .download_btn {
+            flex-direction: column;
+        }
+        .play_store,
+        .apple_store {
+            margin: 1rem auto;
+            width: 80%;
+        }
+    }
+}

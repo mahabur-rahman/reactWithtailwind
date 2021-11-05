@@ -1,0 +1,27 @@
+#footer {
+    overflow: hidden;
+    .footer_content {
+        .footer_img {
+            img {
+                height: 55px;
+            }
+        }
+    }
+}
+
+// ======== responsive css ==========
+@media (max-width: 1279px) {
+    #footer .footer_content .footer_img img {
+        height: 50px;
+    }
+}
+
+@media (max-width: 1050px) {
+    #footer .footer_content.flex.justify-evenly.items-center {
+        flex-direction: column;
+    }
+    #footer .links {
+        text-align: center;
+        padding: 1rem;
+    }
+}

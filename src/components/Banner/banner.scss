@@ -1,0 +1,84 @@
+#banner {
+    overflow: hidden;
+    height: 100vh;
+    // banner left
+    .banner_left {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 60%;
+            height: 70px;
+        }
+    }
+    // banner right
+    .banner_right {
+        img {
+            max-width: 100%;
+            height: 180px !important;
+            margin: 0 0.4rem;
+        }
+        .first_img {
+            height: 120px !important;
+            max-width: 95%;
+            text-align: center;
+            margin: 0 auto;
+        }
+        // for rotate
+        transform: rotate(-19deg);
+        -webkit-transform: rotate(-19deg);
+        -moz-transform: rotate(-19deg);
+        -ms-transform: rotate(-19deg);
+        -o-transform: rotate(-19deg);
+    }
+}
+
+// particle js
+#particles-js {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+// =========== responsive ===========
+// @media (max-width: 2100px) {
+//     #banner {
+//         height: 40vh;
+//     }
+// }
+@media (max-width: 1279px) {
+    #banner {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 1023px) {
+    #banner .banner_right img {
+        height: 150px !important;
+    }
+    #banner .banner_right .first_img {
+        height: 95px !important;
+    }
+    #banner .banner_left img {
+        margin-bottom: 3rem;
+        width: 60%;
+        height: 40px;
+    }
+}
+
+@media (max-width: 639px) {
+    #banner {
+        height: 40vh;
+    }
+    #banner .banner_right {
+        display: none;
+    }
+    #banner .banner_left {
+        h2 {
+            text-align: center;
+        }
+    }
+}

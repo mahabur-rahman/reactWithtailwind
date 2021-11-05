@@ -1,0 +1,51 @@
+#dashboard {
+    // overflow: hidden;
+    position: relative;
+    background: #26475b;
+    padding: 260px 0;
+    .title {
+        h2 {
+            line-height: 1.5;
+        }
+    }
+    .scroll_effect {
+        overflow: hidden;
+        img {
+            padding: 20px;
+            background-color: #fff;
+            margin: 0 auto;
+            max-width: 70%;
+            border-radius: 40px;
+            -webkit-border-radius: 40px;
+            -moz-border-radius: 40px;
+            -ms-border-radius: 40px;
+            -o-border-radius: 40px;
+        }
+    }
+    .secondImg,
+    .thirdImg,
+    .fourthImg,
+    .fifthImg {
+        position: absolute;
+        top: 4%;
+        left: 15%;
+    }
+}
+
+// ========= responsive =========
+@media (max-width: 900px) {
+    #dashboard {
+        .title {
+            .text-5xl {
+                font-size: 2rem;
+                line-height: 1;
+            }
+        }
+    }
+}
+
+@media (max-width: 699px) {
+    #dashboard {
+        display: none;
+    }
+}

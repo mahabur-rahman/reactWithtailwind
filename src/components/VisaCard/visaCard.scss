@@ -1,0 +1,21 @@
+#visaCard {
+    overflow: hidden;
+    background: #000;
+    .main_sec {
+        .visa_img {
+            img {
+                margin: 0 auto;
+                text-align: center;
+                width: 45vw;
+                transform: rotate3d(1, 1, 1, 320deg);
+            }
+        }
+    }
+}
+
+// ========= responsive =========
+@media (max-width: 768px) {
+    #visaCard .main_sec .visa_img img {
+        width: 85vw;
+    }
+}

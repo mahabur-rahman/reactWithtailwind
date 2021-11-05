@@ -1,0 +1,26 @@
+#paymentSystem {
+    overflow: hidden;
+    padding-top: 200px;
+    .paymentSystem_img {
+        img {
+            max-width: 30%;
+            height: 100%;
+        }
+    }
+}
+
+// ========= responsive css =========
+@media (max-width: 767px) {
+    #paymentSystem {
+        overflow: hidden;
+        .mb-60 {
+            margin-bottom: 7rem;
+        }
+        .-mb-72 {
+            margin-bottom: -4rem;
+        }
+        .-mt-40 {
+            margin-top: -3rem;
+        }
+    }
+}
